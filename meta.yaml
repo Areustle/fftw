@@ -1,0 +1,45 @@
+# This file created by conda-build 2.1.15
+# meta.yaml template originally from:
+# /home/giacomov/software/conda/recipes/fftw, last modified Tue May 23 18:06:13 2017
+# ------------------------------------------------
+
+package:
+    name: fftw
+    version: 3.3.6
+source:
+    url: http://fftw.org/fftw-3.3.6-pl2.tar.gz
+build:
+    noarch: ''
+    noarch_python: false
+    number: '0'
+    string: '0'
+requirements:
+    build:
+        - libgfortran 3.0.0 1
+        - setuptools 27.2.0 py36_0
+        - sqlite 3.13.0 0
+        - zlib 1.2.8 3
+        - pip 9.0.1 py36_1
+        - gcc 4.8.5 7
+        - cloog 0.18.0 0
+        - python 3.6.1 2
+        - libgcc 5.2.0 0
+        - xz 5.2.2 1
+        - wheel 0.29.0 py36_0
+        - mpi4py 2.0.0 py36_2
+        - tk 8.5.18 0
+        - readline 6.2 2
+        - isl 0.12.2 0
+        - mpich2 1.4.1p1 0
+        - mpc 1.0.3 0
+        - mpfr 3.1.5 0
+        - gmp 6.1.0 0
+        - openssl 1.0.2k 2
+    run:
+        - libgcc
+        - mpi4py
+        - libgfortran
+about:
+    home: http://fftw.org
+extra:
+    final: true
