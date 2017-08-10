@@ -2,7 +2,7 @@
   --enable-shared \
   --enable-openmp \
   --enable-mpi \
-  --includedir=$PREFIX/fftw/include
+  --includedir=$PREFIX/include/fftw
 
 make
 
